@@ -1,6 +1,7 @@
 module.exports.getIndex = function(req, res){
   res.render('index');
 };
+
 module.exports.getReviews = function(req, res){
     // univId = user-selected university
     var univId = req.params.id || '';
@@ -22,7 +23,6 @@ module.exports.createReview = function(req, res){
     var review = req.body.data;
 
     // onsuccess
-
     res.send(newReview);
 };
 module.exports.getUnivs = function(req, res){

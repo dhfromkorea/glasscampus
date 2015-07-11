@@ -6,22 +6,17 @@ var handler = require('./routeHandler.js');
 
 module.exports = function (app) {
   app.get('/', handler.getIndex);
-  app.get('/reviews', handler.getReviews);
-  app.get('/reviews/:id', handler.getReview);
-  app.post('/reviews', handler.createReview);
 
-  app.get('/universities', handler.getUnivs);
+  app.route('/reviews')
+    .get(handler.getReviews)
+    .post(handler.createReview);
+
+  app.get('/reviews/:id', handler.getReview);
+
+  app.route('/universities')
+    .get(handler.getUnivs)
+    .post(handler.createUniv);
+
   app.get('/universities/:id', handler.getUniv);
-  app.post('/universities', handler.createUniv);
 };
 
-
-// router.get('/', function (req, res, next) {
-//   Article.find(function (err, articles) {
-//     if (err) return next(err);
-//     res.render('index', {
-//       title: 'Generator-Express MVC',
-//       articles: articles
-//     });
-//   });
-// });
