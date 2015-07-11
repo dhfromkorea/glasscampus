@@ -1,44 +1,39 @@
-# Project Name
+### User requirements
+users can ...
+- create and view reviews
+- submit a review anonymously (no footprints whatsoever)
+- search for reviews of a particular university
+- see overall ratings of a university
 
-> Pithy project description
-
-## Team
+### Technical requirements
 
 
-## Table of Contents
+### Dones
+- initialized project folder
+- create and view reviews
+- set up an express server
+- set up api routes
 
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
-    1. [Installing Dependencies](#installing-dependencies)
-    1. [Tasks](#tasks)
-1. [Team](#team)
-1. [Contributing](#contributing)
+### Todos
+(non-technical)
+- find a female team member (web design, ux/ui, and a good communicator)
 
-## Usage
 
-> Some usage instructions
+(back-end)
+- connect api endpoints and db(mongoose)
+- mongodb setup
+- define schema & models
+- deploy the app via heroku
+- api routes: return dummy data for now (in the morning) Yun
+- testing and debugging
 
-## Requirements
-
-- Node 0.10.x
-- etc
-- etc
-
-## Development
-
-### Installing Dependencies
-
-From within the root directory:
-
-```sh
-sudo npm install -g bower
-npm install
-bower install
-```
-
-### Tasks
-See the projects backlog in asana [here](https://LINKTOYOURASANA.com)
+(Front-end)
+- setup frontend dev environment for collaboration (on the same repo)
+- discuss and decide on the bootstrap version and bootram theme
+- wire frame the pages
+- build the pages using the bootstrap elements
+- enable the app to make requests to api endpoints for reviews/univs
+- testing and iteration
 
 
 
